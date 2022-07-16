@@ -28,7 +28,17 @@ const useStyles = makeStyles((theme) => ({
         flexDirection:'column',
         alignItems:'center',
         fontSize:'1.3rem',
-        
+        boxShadow:'0 0 8px #e9dede25',
+        '@media(max-width:400px)':{
+            fontSize:'1.1rem',
+            padding:'8px'
+        }
+    },
+    imageItem:{
+        '@media(max-width:400px)':{
+            height:'5rem',
+            width:'5rem'
+        }
     }
 }))
 
@@ -69,21 +79,30 @@ const Carousel = () => {
     // creating the items aka cryptos from the the api
     // using higher order mapping function through our trending items 
     const items = trending.map((item)=> {
+
+        // the price changed during 24hr window
+        let priceChange = item.price_change_percentage_24h;
         return(
-        <>
+        <> 
         <Link
             className={classes.carouselItem}
             to={`/coins/${item?.id}`}>
             <img
+            className={classes.imageItem}
             src={item?.image}
             alt={item.name}
             height='100'
-            style={{marginBottom:'1rem'}}
+            style={{marginBottom:'10px'}}
               />
-               <span>
+               <span style={{color:'white'}}>
                     {item.name}
                 </span>
-                <span>
+                <span 
+                style={priceChange>=0 ? {color:'green'} : {color:'red'}}
+                >  
+                    {priceChange.toFixed(3)}% 
+                </span>
+                <span >
                     {symbol} {item?.current_price}
                 </span>
             </Link> 

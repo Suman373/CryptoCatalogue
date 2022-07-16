@@ -26,9 +26,11 @@ a{
   text-decoration: none;
   color:#f0ed3f;
 }
+body{
+  min-height:100vh;
+}
 
 /* header */
 .header-container{
   width:100vw;
-  position:relative;
 }

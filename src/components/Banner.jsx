@@ -19,7 +19,8 @@ const useStyles = makeStyles(()=>({
         flexDirection:'column',
         justifyContent:'space-around',
         paddingTop:'2rem',
-        alignItems:'center'
+        alignItems:'center',
+        overflowX:'hidden'
     },
     bannerTitle:{
         textAlign:'center',
@@ -33,11 +34,10 @@ const useStyles = makeStyles(()=>({
     infoStyle:{
         color:'#ED8607',
         fontSize:'1.3rem',
-        textAlign:'justify',
+        textAlign:'center',
         fontFamily: 'Lora, serif',
         '@media(max-width:400px)':{
-            fontSize:'1.2rem',
-            padding:'0 1rem'
+            fontSize:'1.1rem',
         }
     }
 }))

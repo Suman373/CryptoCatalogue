@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import { CryptoState } from "../context/CrypContext";
 
 const useStyles = makeStyles(() => ({
+
     titleStyle: {
-        flex: '1',
+        flex:'1',
         fontSize: '1.8rem',
         color: '#ED8607',
         fontWeight: '500',
@@ -26,7 +27,8 @@ const useStyles = makeStyles(() => ({
         color: 'white',
         fontWeight:'600',
         background: '#ED8607',
-        '@media(max-width:400px)':{width:'4.4rem', 
+        '@media(max-width:400px)':
+        {width:'4.4rem', 
         height:'2rem',
         fontSize:'0.7rem',
     }
@@ -35,6 +37,9 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Header = () => {
+  
+    const titleAcro = "MCC"
+
     //  useStyles in classes and then the styles are used like an object content by using dot notation
     const classes = useStyles();
     // useNavigate for redirecting to homepage
@@ -52,12 +57,10 @@ const Header = () => {
 
     // our context state for the crypto symbols
     const {currency , setCurrency} = CryptoState();
-
-
-
+    
     return (
         <ThemeProvider theme={darkTheme}>
-            <div className="header-container">
+            <div className="header-container" >
                 <AppBar color="transparent" position="static">
                     <Container>
                         <Toolbar>
@@ -65,7 +68,7 @@ const Header = () => {
                             className={classes.titleStyle}
                             onClick={()=> navigate('/')}
                             >
-                                My Crypto Catalogue
+                               {titleAcro}
                             </Typography>
                             <Select variant="outlined"
                                 className={classes.menuStyle}
