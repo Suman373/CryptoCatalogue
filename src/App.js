@@ -7,7 +7,7 @@ import { Coin } from './pages/Coin';
 import {ThemeProvider,createTheme,makeStyles } from '@material-ui/core/styles' // these are necessary for using mui v5+ which is suitable or React 17+, also createMuiTheme has been deprecated
 
 const theme = createTheme();
-  const useStyles = makeStyles((theme)=>({
+  const useStyles = makeStyles(()=>({
     // wrap the {} inside a normal parenthesis as this doesn''t give error in React 18. Also note that makeStyles also has an alternative of 'styled' 
     App:{
       minHeight:'100vh',

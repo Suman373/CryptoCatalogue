@@ -3,8 +3,8 @@
 /* font-family: 'Lora', serif;
 font-family: 'Vollkorn', serif; */
 /* color theme: primary : "A32410",
-orange-ish : "ED8607",
-greenish : "93A711",
+orange-ish : "#ED8607",
+greenish : "#93A711",
 lighyellow : "#f0ed3f",
 
 */
@@ -21,6 +21,8 @@ html{
 :root{
   --bg-color:#1d1b1b;
   --glasseffect:#e9dede20;
+  --violeted:#220e30;
+  --greyish:#63635b;
 }
 a{
   text-decoration: none;
@@ -28,6 +30,7 @@ a{
 }
 body{
   min-height:100vh;
+  overflow-x: hidden;
 }
 
 /* header */

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
+    "@material-ui/lab": "^4.0.0-alpha.61",
     "@mui/material": "^5.8.7",
     "@mui/styled-engine-sc": "^5.8.0",
     "@testing-library/jest-dom": "^5.16.4",

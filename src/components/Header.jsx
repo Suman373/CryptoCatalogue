@@ -51,7 +51,6 @@ const Header = () => {
             primary: {
                 main: "#1d1b1b"
             },
-            type: "dark",
         }
     })
 
