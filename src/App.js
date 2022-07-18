@@ -3,6 +3,7 @@ import {BrowserRouter as BRouter, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
 import { Homepage } from './pages/Homepage';
 import { Coin } from './pages/Coin';
+import About from './pages/About';
 // using styled components and no dependency related to @emotions/react has been added
 import {ThemeProvider,createTheme,makeStyles } from '@material-ui/core/styles' // these are necessary for using mui v5+ which is suitable or React 17+, also createMuiTheme has been deprecated
 
@@ -27,6 +28,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Homepage/>}></Route>
         <Route path="/coins/:id" element={<Coin/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
         </Routes>
     </div>
     </BRouter>

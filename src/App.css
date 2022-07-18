@@ -17,6 +17,7 @@ lighyellow : "#f0ed3f",
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background:var(--bg-color);
 }
 :root{
   --bg-color:#1d1b1b;
@@ -30,10 +31,12 @@ a{
 }
 body{
   min-height:100vh;
+  background: var(--bg-color);
   overflow-x: hidden;
 }
 
 /* header */
 .header-container{
   width:100vw;
+  overflow: hidden;
 }

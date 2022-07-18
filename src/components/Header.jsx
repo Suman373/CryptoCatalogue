@@ -38,7 +38,7 @@ const useStyles = makeStyles(() => ({
 
 const Header = () => {
   
-    const titleAcro = "MCC"
+    const titleAcro = "Crypto Catalogue"
 
     //  useStyles in classes and then the styles are used like an object content by using dot notation
     const classes = useStyles();

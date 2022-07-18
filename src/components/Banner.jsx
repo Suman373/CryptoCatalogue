@@ -8,7 +8,7 @@ const useStyles = makeStyles(()=>({
     // this is the div / container for all components needed for the banner
     banner:{
         backgroundImage:`url(${bg})`,
-        height:'30rem',
+        height:'100vh',
         width:'100vw',
         overflow:'hidden'
     },

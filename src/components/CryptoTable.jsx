@@ -33,10 +33,11 @@ const useStyles = makeStyles(()=>({
         }
     },
     textField:{
+        fontSize:'1.1rem',
         width:'30rem',
         paddingBottom:'10px',
-        '& ::placeholder':{ color:'white'},
-        '@media(max-width:400px)':{
+        '@media(max-width:500px)':{
+            fontSize:'1rem',
             width:'85%'
         },
     },
@@ -152,9 +153,11 @@ const CryptoTable =()=>{
         <ThemeProvider theme={goldenTheme}>
                 <Container style={{textAlign:'center', Height:'100vh', overflowX:'hidden'}}>
 
+                   {/* This is the title of the section */}
                     <Typography className={classes.title}>
                         Cryptos on basis of Market Cap
                     </Typography>
+
                 {/* This is the input field/ search field */}
                     <TextField 
                     className={classes.textField}
@@ -163,7 +166,12 @@ const CryptoTable =()=>{
                     //  use inputlabelprops with style attribute to style the label of material ui
                      InputLabelProps={{
                         style:{
-                            color:'white',
+                            color:'grey',
+                        }
+                     }}
+                     InputProps={{
+                        style:{
+                            color:'gold'
                         }
                      }}
                      onChange={(e)=> setSearch(e.target.value)}
@@ -197,7 +205,7 @@ const CryptoTable =()=>{
                                 .map((cell) =>{
                                 return(
                                     <TableRow
-                                    onClick={()=> navigate(`/coins/:${cell?.id}`)}
+                                    onClick={()=> navigate(`/coins/${cell?.id}`)}
                                     className={classes.cell}
                                     key={cell.name}
                                     >
@@ -254,7 +262,12 @@ const CryptoTable =()=>{
 
                     {/* our pagination will be below the table container */}
                     <Pagination
-                    style={{width:'100%', display:'flex',justifyContent:'center',margin:'5px',padding:'2px'}}
+                    style={{width:'100%', 
+                    display:'flex',
+                    justifyContent:'center',
+                    margin:'5px',
+                    padding:'2px'
+                     }}
                     color="primary"
                     variant="outlined"
                     // we use the length of handle search to display 10 items per page

@@ -27,15 +27,14 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
-        fontSize:'1.3rem',
-        boxShadow:'0 0 8px #e9dede25',
+        fontSize:'1.4rem',
         '@media(max-width:400px)':{
             fontSize:'1.1rem',
             padding:'8px'
         }
     },
     imageItem:{
-        '@media(max-width:400px)':{
+        '@media(max-width:500px)':{
             height:'5rem',
             width:'5rem'
         }
