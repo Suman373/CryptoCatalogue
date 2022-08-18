@@ -7,6 +7,7 @@ import { CryptoState } from "../context/CrypContext";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import HashLoader from 'react-spinners/HashLoader';
+import ReactHtmlParser from 'react-html-parser';
 
 const theme = createTheme();
 
@@ -17,13 +18,13 @@ const useStyles = makeStyles(() => ({
         textAlign:'center',
         height: '96vh',
         width: '100vw',
-        overflow: 'hidden'
+        overflowX: 'hidden'
     },
     titleStyle:{
         fontFamily: 'Vollkorn, serif',
         margin:'1rem 0',
-        fontSize:'2.2rem',
-        color:'#f0ed3f',
+        fontSize:'2.4rem',
+        color:'white',
         '@media(max-width:500px)':{
             fontSize:'1.8rem'
         }
@@ -55,7 +56,7 @@ const useStyles = makeStyles(() => ({
         margin: '10px 0',
         fontSize: '1.3rem',
         lineHeight:'2',
-        color: '#f0ed3f',
+        color: 'white',
         fontFamily: 'Lora ,serif',
         '@media(max-width:500px)':{
             fontSize:'1rem'
@@ -94,7 +95,6 @@ export const Coin = () => {
     const fetchCrypto = async () => {
         const { data } = await axios.get(SingleCrypto(id)); // storing the response inside the data 
         setCrypto(data);
-        console.log(data);
     }
 
     // using useEffect for fetching while mount and re-renders
@@ -124,6 +124,8 @@ export const Coin = () => {
                 </div>
                 <div>
                     <Typography className={classes.infoContainer}>
+
+                        <p>{ReactHtmlParser(crypto?.description.en.split(".")[0])}</p>
 
                         {/* rank according to market cap */}
                         <span>Market Cap Rank : {crypto?.market_cap_rank} </span>
@@ -158,11 +160,6 @@ export const Coin = () => {
                         {/* liquidity score */}
                         <span>
                             Liquidity Score : {crypto?.liquidity_score}
-                        </span>
-                        
-                        {/* hasing algo */}
-                        <span>
-                            Hashing algorithm : {crypto?.hashing_algorithm===null ? 'NA' : crypto?.hashing_algorithm}
                         </span>
                     </Typography>
                 </div>

@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
         padding: '5px 3rem',
         fontSize: '1.2rem',
         lineHeight: '2',
-        color: 'gold',
+        color: 'white',
         fontFamily: 'Lora ,serif',
         '@media(max-width:500px)': {
             fontSize: '0.9rem',
@@ -57,8 +57,8 @@ const About = () => {
            
                 :
                 <span className={classes.aboutStyle}>
-                    <h1 style={{ textAlign: 'center',fontFamily: 'Volkorn, serif'}}>ABOUT</h1>
-                    <h2 style={{ textAlign: 'center',fontFamily: 'Volkorn, serif'}}> Welcome to Crypto Catalogue👋</h2>
+                    <h1 style={{ color:'gold', textAlign: 'center',fontFamily: 'Volkorn, serif'}}>ABOUT</h1>
+                    <h2 style={{ color:'gold',textAlign: 'center',fontFamily: 'Volkorn, serif'}}> Welcome to Crypto Catalogue👋</h2>
                     <p>
                         A cryptocurrency, crypto-currency, or crypto is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
                     </p>
