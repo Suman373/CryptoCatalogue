@@ -1,8 +1,11 @@
-## Getting Started with Create React App
+
+<h1 align="center"> Crypto Catalogue</h1>
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#### Available Scripts
 
 In the project directory, you can run:
 
@@ -26,3 +29,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+#### About 
+ A catalogue of all the trending cryptocurrencies and their details in a designated table. Each coin also has details like description, market cap, high and low in past 1day, 1 week and 1 month
+
+#### Author  
+<a href="https://github.com/Suman373">Suman373</a>
