@@ -51,7 +51,7 @@ const Banner =()=>{
         <div className={classes.banner}>
             <Container className={classes.bannerContainer}>
                 <div className={classes.bannerTitle}>
-                    Crypto Catalgoue
+                    Crypto Catalogue
                 </div>
                 <div className={classes.infoStyle}>
                     A designated catalogue for all top crypto currencies
