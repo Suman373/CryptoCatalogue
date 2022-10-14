@@ -1,7 +1,8 @@
 
 <h1 align="center"> Crypto Catalogue</h1>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/95040233/192758585-8e4d7283-6a89-4709-8d36-25d3741b58c6.png"/> </p>
+![crypto-banner](https://user-images.githubusercontent.com/95040233/195879162-8f15ef31-7fc5-4fa4-8942-aea1896b953b.png)
+
 
 ### About 👇
 A catalogue of all the trending cryptocurrencies and their details in a designated table. Each coin also has details like description, market cap, high and low in past 1day, 1 week and 1 month
@@ -41,5 +42,4 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-#### Acknowledgements : Roadside Coder and Youtube
-
+Happy developing
