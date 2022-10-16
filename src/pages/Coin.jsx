@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
         fontFamily: 'Vollkorn, serif',
         margin:'1rem 0',
         fontSize:'2.4rem',
-        color:'white',
+        color:'#000000',
         '@media(max-width:500px)':{
             fontSize:'1.8rem'
         }
@@ -56,7 +56,7 @@ const useStyles = makeStyles(() => ({
         margin: '10px 0',
         fontSize: '1.3rem',
         lineHeight:'2',
-        color: 'white',
+        color: '#00000',
         fontFamily: 'Lora ,serif',
         '@media(max-width:500px)':{
             fontSize:'1rem'

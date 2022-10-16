@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
         display: 'grid',
         margin: '5px auto',
         placeContent: 'center',
-        background: '#ED8607',
+        background: '#000000',
         textAlign: 'center',
         overflowX: 'hidden',
         '@media(max-width:500px)': {
@@ -42,7 +42,7 @@ const useStyles = makeStyles(() => ({
     },
     linkStyle: {
         margin: '1rem',
-        color: 'black',
+        color: 'white',
         fontSize: '1.2rem',
         cursior: 'pointer',
         fontFamily: 'Lora ,serif',
@@ -116,9 +116,9 @@ const Footer = () => {
                         required
                         onChange={(e) => setEmail(e.target.value)}
                         autoComplete="current-email"
-                        InputLabelProps={{
+                        InputProps={{
                             style: {
-                                color: 'black',
+                                backgroundColor: 'white',
                             }
                         }} />
                     <Button

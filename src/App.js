@@ -12,7 +12,7 @@ const theme = createTheme();
     // wrap the {} inside a normal parenthesis as this doesn''t give error in React 18. Also note that makeStyles also has an alternative of 'styled' 
     App:{
       minHeight:'100vh',
-      background:'#1d1b1b',
+      background:'#ffffff',
       color:'white'
     }
 
