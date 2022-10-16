@@ -56,7 +56,7 @@ const useStyles = makeStyles(() => ({
         margin: '10px 0',
         fontSize: '1.3rem',
         lineHeight:'2',
-        color: '#00000',
+        color: '#000000',
         fontFamily: 'Lora ,serif',
         '@media(max-width:500px)':{
             fontSize:'1rem'
