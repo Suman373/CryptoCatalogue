@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         '@media(max-width:400px)':{
         width:'100%', 
         textAlign:'center',
-        height:'10rem',
+        height:'10rem'
         }
     },
     carouselItem:{
