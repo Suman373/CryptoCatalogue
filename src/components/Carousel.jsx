@@ -101,7 +101,7 @@ const Carousel = () => {
                 >  
                     {priceChange.toFixed(3)}% 
                 </span>
-                <span >
+                <span style={{color: "#3C4048"}} >
                     {symbol} {item?.current_price}
                 </span>
             </Link> 

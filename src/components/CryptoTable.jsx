@@ -86,7 +86,7 @@ const useStyles = makeStyles(()=>({
     },
     priceStyle:{
         fontSize:'1.3rem',
-        color:'yellow',
+        color:'#3C4048',
         '@media(max-width:400px)':{
             fontSize:'1rem'
         }
@@ -100,7 +100,7 @@ const useStyles = makeStyles(()=>({
     },
     marketCapStyle:{
         fontSize:'1.3rem',
-        color:'#93A711',
+        color:'#3C4048',
         '@media(max-width:400px)':{
             fontSize:'1rem'
         }
