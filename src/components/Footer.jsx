@@ -58,6 +58,8 @@ const useStyles = makeStyles(() => ({
         width:'5rem',
         background:'#1d1b1b',
         color:'white',
+        marginTop:"14px",
+        marginLeft:"9px",
         cursor:'pointer',
         '&:hover':{
             color:'yellow'
