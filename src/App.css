@@ -14,17 +14,20 @@ lighyellow : "#f0ed3f",
   padding:0;
   box-sizing: border-box;
 }
+
+:root{
+  --bg-color:#ffffff;
+  --glasseffect:#e9dede20;
+  --violeted:#220e30;
+  --greyish:#63635b;
+}
+
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
   background:var(--bg-color);
 }
-:root{
-  --bg-color:#1d1b1b;
-  --glasseffect:#e9dede20;
-  --violeted:#220e30;
-  --greyish:#63635b;
-}
+
 a{
   text-decoration: none;
   color:#f0ed3f;

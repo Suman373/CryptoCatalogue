@@ -5,11 +5,13 @@ import { useNavigate } from 'react-router-dom';
 import { CryptoState } from "../context/CrypContext";
 
 const useStyles = makeStyles(() => ({
-
+    AppBar: {
+        backgroundColor: "#000000"
+    },
     titleStyle: {
         flex:'1',
         fontSize: '1.8rem',
-        color: '#ED8607',
+        color: '#ffffff',
         fontWeight: '500',
         fontFamily: 'Vollkorn, serif',
         cursor: 'pointer',
@@ -26,7 +28,7 @@ const useStyles = makeStyles(() => ({
         marginRight:'1rem',
         color: 'white',
         fontWeight:'600',
-        background: '#ED8607',
+        background: 'blue',
         '@media(max-width:400px)':
         {width:'4.4rem', 
         height:'2rem',
@@ -60,7 +62,7 @@ const Header = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <div className="header-container" >
-                <AppBar color="transparent" position="static">
+                <AppBar color="transparent" className={classes.AppBar} position="static">
                     <Container>
                         <Toolbar>
                             <Typography 

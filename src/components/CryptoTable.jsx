@@ -26,7 +26,7 @@ const useStyles = makeStyles(()=>({
         margin:'1rem 0',
         padding:'10px',
         fontSize:'2.5rem',
-        color:'#ED8607',
+        color:'#000000',
         fontFamily: 'Vollkorn,serif',
         '@media(max-width:400px)':{
             fontSize:'2rem'
@@ -42,7 +42,7 @@ const useStyles = makeStyles(()=>({
         },
     },
     headValue:{
-        color:"#ED8607",
+        color:"#ffffff",
         fontFamily:'Lora, serif',
         fontSize:'1.5rem',
         '@media(max-width:400px)':{
@@ -51,9 +51,9 @@ const useStyles = makeStyles(()=>({
     },
     cell:{
         cursor:'pointer',
-        background:'rgb(0,0,0,0.3)',
+        background:'#B2B2B2',
         '&:hover':{
-            background:'linear-gradient(black,rgb(0,0,0,0.2))',
+            background:'linear-gradient(#7978FF,rgb(0,0,0,0.2))',
            transform:'scale(5px)',
            boxShadow:'0px 0 4px #ED8607',
            transition:'transform 100ms ease-in-out'
@@ -86,7 +86,7 @@ const useStyles = makeStyles(()=>({
     },
     priceStyle:{
         fontSize:'1.3rem',
-        color:'yellow',
+        color:'#3C4048',
         '@media(max-width:400px)':{
             fontSize:'1rem'
         }
@@ -100,7 +100,7 @@ const useStyles = makeStyles(()=>({
     },
     marketCapStyle:{
         fontSize:'1.3rem',
-        color:'#93A711',
+        color:'#3C4048',
         '@media(max-width:400px)':{
             fontSize:'1rem'
         }

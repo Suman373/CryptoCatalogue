@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         '@media(max-width:400px)':{
         width:'100%', 
         textAlign:'center',
-        height:'10rem',
+        height:'10rem'
         }
     },
     carouselItem:{
@@ -101,7 +101,7 @@ const Carousel = () => {
                 >  
                     {priceChange.toFixed(3)}% 
                 </span>
-                <span >
+                <span style={{color: "#3C4048"}} >
                     {symbol} {item?.current_price}
                 </span>
             </Link> 
