@@ -57,12 +57,13 @@ const useStyles = makeStyles(() => ({
     buttonStyle:{
         width:'5rem',
         background:'#1d1b1b',
+        height:"36px",
         color:'white',
-        marginTop:"14px",
+        marginTop:"15px",
         marginLeft:"9px",
         cursor:'pointer',
         '&:hover':{
-            color:'yellow'
+            color:'black'
         },
         '@media(max-width:500px)':{
             margin:'10px',
@@ -127,7 +128,8 @@ const Footer = () => {
                         className={classes.buttonStyle}
                         onClick={(e) => handleSubmit(e)}
                         variant="contained">
-                        →
+                        <ion-icon name="send-sharp"></ion-icon>
+                    
                     </Button>
                 </div>
                 {/* if submitted show message */}
